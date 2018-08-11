@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  text-align: center;
+  background-color: #CE4071;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  cursor: pointer;
+  clear: both;
+}
+
+td {
+  width: 200px;
+  height: 200px;
+  font-size: 150px;
+}
+
+.bottom {
+  border-bottom: 6px solid #E6D6DC;
+}
+
+.right {
+  border-right: 6px solid #E6D6DC;
+}
+
+/*below are 2 pairs of tokens*/
+.X, .O, p, h1 {
+  color: #E6D6DC;
+  font-family: 'Source Sans Pro';
+}
