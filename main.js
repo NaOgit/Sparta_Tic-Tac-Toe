@@ -15,6 +15,7 @@ $('[index]').on("click", function() {
       $("#message").html("It's Player 2's turn");
       //Player 1's turn has ended
       playerTurn = false;
+      //Counting turns
       turns++;
       //Check for winning combination inputs
       checkWin($('#box0'),('#box1'),('#box2'),"Player 1");
@@ -31,8 +32,8 @@ $('[index]').on("click", function() {
       $(this).addClass("O").html("O");
       $("#message").html("It's Player 1's turn");
       //Player 2's turn has ended
-
       playerTurn = true;
+      //Counting turns
       turns++;
       //Check for winning combination inputs
       checkWin($('#box0'),('#box1'),('#box2'),"Player 2");
@@ -44,7 +45,9 @@ $('[index]').on("click", function() {
       checkWin($('#box1'),('#box4'),('#box7'),"Player 2");
       checkWin($('#box2'),('#box5'),('#box8'),"Player 2");
     }
+    //If turns > 8
   } else {
+      //Display a draw message
       $("#message").html("It's a draw!")
   }
 
@@ -75,6 +78,7 @@ function checkWin(box1, box2, box3, player) {
 $('#restart').click(function() {
   //All Xs and Os are removed
   $('td').removeClass("O X").html("");
+  //Reset turns count back to 0
   turns = 0;
   //The winner from the last round will start
   $("#message").html("Let's play!")
