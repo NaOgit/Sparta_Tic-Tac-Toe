@@ -26,7 +26,12 @@ td {
 }
 
 /*below are 2 pairs of tokens*/
-.X, .O, p, h1 {
+.X, .O, p, h1, #restart {
   color: #E6D6DC;
   font-family: 'Source Sans Pro';
+}
+#restart{
+  color:#CE4071;
+  background-color: #E6D6DC;
+  margin-top: 20px;
 }
